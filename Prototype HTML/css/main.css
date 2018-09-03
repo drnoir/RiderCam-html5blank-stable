@@ -1,7 +1,10 @@
 body{
-  
 color:white;
-    font-size:1.2em;
+font-size:1.2em;
+}
+
+h1,h2,h3,h4,h5{
+color: #104040;  
 }
 
 #RightMenu{
@@ -17,6 +20,10 @@ padding:35px;
 .menu{
 list-style: none;
 margin-bottom:45px;
+}
+
+.highlight{
+color:darkgrey;
 }
 
 #content{
