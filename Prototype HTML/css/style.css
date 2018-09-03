@@ -1,7 +1,14 @@
 body{
 color:white;
 font-size:1.2em;
+font-family: 'din1451alt';
 }
+
+@font-face {
+  font-family: 'din1451alt';
+  src: url('fonts/din1451altttf');
+}
+
 
 h1,h2,h3,h4,h5{
 color: #104040;  
@@ -26,11 +33,14 @@ margin-bottom:45px;
 color:darkgrey;
 }
 
+.currentpage{
+color:lightblue;
+}
+
 #content{
 min-width:70%;
 height:680px;
 padding:20px;  
 padding-top:30px;
-/*background:lightblue;*/
 }
 
