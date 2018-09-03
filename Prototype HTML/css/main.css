@@ -1,0 +1,14 @@
+#RightMenu{
+float:right;
+background:grey;
+opacity:0.5;
+min-width:30%;
+min-height: 100%;    
+}
+
+#content{
+min-width:70%;
+height:700px;
+padding:15px;  
+/*background:lightblue;*/
+}
