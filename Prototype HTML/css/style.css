@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5{
 color: #104040;  
 }
 
-#RightMenu{
+.RightMenu{
 float:right;
 background:#104040;
 opacity:0.95;
