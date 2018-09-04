@@ -1,9 +1,21 @@
 <?php get_header(); ?>
-
-	<main role="main">
-		<!-- section -->
+<div id = "container-fluid">
+<?php get_sidebar(); ?>	
+    <main role="main">
+            
+        <!-- section -->
 		<section>
-
+  <!-- logo -->
+					<div class="logo">
+						<a href="<?php echo home_url(); ?>">
+                            <?php if ( function_exists( 'the_custom_logo' ) ) {
+                        the_custom_logo();
+                            } ?>
+							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+                             <!-- code in logo upload here -->
+						</a>
+					</div>
+					<!-- /logo -->
 			<h1><?php the_title(); ?></h1>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
@@ -40,6 +52,5 @@
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
-
 <?php get_footer(); ?>
+</div>
