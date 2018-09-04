@@ -35,12 +35,11 @@ if (function_exists('add_theme_support'))
     // Add support for custum logo 
     add_theme_support( 'custom-logo' );
     
-    
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
-    /*add_theme_support('custom-background', array(
+    add_theme_support('custom-background', array(
 	'default-color' => 'FFF',
 	'default-image' => get_template_directory_uri() . '/img/bg.jpg'
-    ));*/
+    ));
 
     // Add Support for Custom Header - Uncomment below if you're going to use
     /*add_theme_support('custom-header', array(
@@ -91,7 +90,7 @@ function html5blank_nav()
 	);
 }
 
-//define custom logo setttings
+//define custom logo settings
 function themename_custom_logo_setup() {
     $defaults = array(
         'height'      => 100,
