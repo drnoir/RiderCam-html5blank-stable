@@ -10,23 +10,45 @@ font-family: 'din1451alt';
 }
 
 
-h1,h2,h3,h4,h5{
+h4,h5{
 color: #104040;  
+}
+
+h1,h2, h3
+{
+    color:#FFF;
 }
 
 .RightMenu{
 float:right;
 background:#104040;
 opacity:0.95;
-min-width:30%;
+width:30%;
 min-height:680px; 
-color:white;
+color:lightblue;
 padding:35px;
 }
 
 .menu{
 list-style: none;
 margin-bottom:45px;
+color:lightblue;
+}
+
+ul.sub-menu{
+list-style: none;  
+}
+
+ul.sub-menu a{
+color:white;    
+}
+
+.menu a{
+color:white;
+}
+
+.menu a:hover{
+text-decoration: none;
 }
 
 .highlight{
