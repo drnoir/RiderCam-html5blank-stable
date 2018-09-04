@@ -5,6 +5,8 @@
             
         <!-- section -->
 		<section>
+        <!-- Apply content CSS Styles -->
+        <div id = "content"> 
   <!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
@@ -47,7 +49,8 @@
 			<!-- /article -->
 
 		<?php endif; ?>
-
+        <!-- close div for content -->
+        </div>
 		</section>
 		<!-- /section -->
 	</main>
