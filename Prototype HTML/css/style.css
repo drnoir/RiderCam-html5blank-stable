@@ -27,6 +27,7 @@ width:30%;
 min-height:680px; 
 color:lightblue;
 padding:35px;
+position: fixed absolute;
 }
 
 .menu{
