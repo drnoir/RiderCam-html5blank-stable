@@ -64,7 +64,8 @@ color:lightblue;
 #content{
 min-width:70%;
 height:680px;
-padding:20px;  
+padding:20px;
+margin:2px;
 padding-top:30px;
 color:black;
 }
