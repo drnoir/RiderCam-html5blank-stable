@@ -8,7 +8,13 @@
         <!-- Apply content CSS Styles -->
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
         <div id = "content" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"> 
-  <!-- logo -->
+			<h1><?php the_title(); ?></h1>
+
+		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
+			<!-- article -->
+            <div id = "content-area">
+                  <!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
                             <?php if ( function_exists( 'the_custom_logo' ) ) {
@@ -19,12 +25,6 @@
 						</a>
 					</div>
 					<!-- /logo -->
-			<h1><?php the_title(); ?></h1>
-
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-			<!-- article -->
-            <div id = "content-area">
             <!-- content area to avoid overlapping content to menu -->    
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 

@@ -11,12 +11,12 @@ font-family: 'din1451alt';
 
 
 h4,h5{
-color: #104040;  
+color: #FFF;  
 }
 
 h1,h2, h3
 {
-    color:#FFF;
+    color:#104040;
 }
 
 .RightMenu{
@@ -74,4 +74,8 @@ color:black;
 width:70%;    
 }
 
-
+/*class for custum logo styling*/
+.logo
+{
+ width:250px;   
+}
