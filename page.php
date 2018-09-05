@@ -24,6 +24,8 @@
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
+            <div id = "content-area">
+            <!-- content area to avoid overlapping content to menu -->    
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<?php the_content(); ?>
@@ -36,6 +38,8 @@
 
 			</article>
 			<!-- /article -->
+            </div>
+            <!--content area end -->
 
 		<?php endwhile; ?>
 
