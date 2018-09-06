@@ -34,12 +34,12 @@
         
         echo  
             '<div class="content" style="background: url('.$images.') no-repeat;"> 
-            <div class = "content-area">'.$content.'</div><button class="scroll">Scroll Down</button></div>';
+            <div class = "content-area">'.$content.'</div>
+            <div class = "scroller"><i class="scroll fas fa-angle-double-down fa-3x"></i></div></div>';
         } 
           
 ?>
 <!--			</article>-->
-            <img src ="img/scoll.png" class = "scroll" >
 		</section>
 		<!-- /section -->
 	</main>

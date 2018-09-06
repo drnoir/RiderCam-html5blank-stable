@@ -1,6 +1,5 @@
 body{
 color:black;
-font-size:1.2em;
 font-family: 'din1451alt';
 }
 
@@ -49,6 +48,10 @@ color:white;
 color:white;
 }
 
+menu a.active{
+color:blue; 
+} 
+
 .menu a:hover{
 text-decoration: none;
 }
@@ -74,6 +77,19 @@ color:black;
 width:70%;    
 min-height:680px;
 padding-top:15%;
+}
+
+/*styling and positioning for scroller button */
+.scroller{
+    margin: auto 0;
+    
+}
+
+/*style for scroll button */ 
+.scroll{
+position:relative;
+left:35%;
+margin: auto 0;    
 }
 
 /*class for custum logo styling*/
