@@ -23,7 +23,7 @@
                         'parent ' => $post->$page_id,
                         'hierarchical' => 0,
                         'sort_column' => 'menu_order', 
-                        'sort_order' => 'asc'
+                        'sort_order' => 'desc'
                     );
                 
                 $pages = get_pages($args);
