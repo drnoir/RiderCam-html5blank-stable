@@ -22,7 +22,9 @@
             tests: {}
         });
         </script>
-
+        <!--load in JQuery lib -->
+        <script src="js/jquery-3.3.1.min.js">
+        <script src="js/custum.js"> 
 	</head>
 	<body <?php body_class(); ?>>
 
