@@ -32,7 +32,7 @@ left:75%;
 div.RightMenu
 {
 opacity:0.95;
-filter:blur(0.9px);  
+filter:blur(0.5px);  
 }
 
 
@@ -41,6 +41,10 @@ filter:blur(0.9px);
 filter:blur(0px); 
 }
 
+.search-input{
+background-color:transparent;
+color:white;
+}
 
 .menu{
 list-style: none;

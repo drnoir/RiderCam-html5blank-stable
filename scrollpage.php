@@ -38,7 +38,7 @@
     $images = get_the_post_thumbnail_url($childList->ID, 'medium');  
             
     foreach ($childList as $child) {  
-        $images = get_the_post_thumbnail_url($child->ID, ('700,300')); 
+        $images = get_the_post_thumbnail_url($child->ID, array(500, 500)); 
         $content = apply_filters('the_content', $child->post_content);
         $title = apply_filters('the_content', $child->post_title); 
         
