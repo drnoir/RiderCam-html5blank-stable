@@ -34,7 +34,7 @@
         
         echo  
             '<div class="content" style="background: url('.$images.') no-repeat;"> 
-            <div id = "content-area">'.$content.'</div></div>
+            <div class = "content-area">'.$content.'</div></div>
             <button class="scroll">Scroll Down</button>';
         } 
           
