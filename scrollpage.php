@@ -61,19 +61,16 @@
             
         $childList = get_pages($childArgs);
         $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+    
             
-        $images = get_the_post_thumbnail_url($childList->ID, 'full');  
-            
-        foreach ($childList as $child) { ?>
-            <div class="child-page">
-                <h2 class="child-title"><?php echo $child->post_title; ?></h2>
-                <?php echo apply_filters( 'the_content', $child->post_content); ?>
-            </div>
-        <?php }
-        ?>
-            
-}
-}
+        foreach ($childList as $child) { 
+             $images = get_the_post_thumbnail_url($child->ID, 'full');
+             $content = apply_filters('the_content', $child->post_content);    
+            echo 
+                '<div class="content" style="background: url('.$images.') no-repeat;">
+                <div id = "content-area">'.$content.'</div></div>';
+             }
+    
 ?>
 <!--			</article>-->
 		</section>

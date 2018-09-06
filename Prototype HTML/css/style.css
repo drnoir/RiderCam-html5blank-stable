@@ -71,11 +71,13 @@ color:black;
 }
 
 #content-area{
-width:70%;    
+width:70%;
+min-height:680px;
 }
 
 /*class for custum logo styling*/
 .logo
 {
- width:250px;   
+ width:250px;
+
 }
