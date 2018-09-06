@@ -74,9 +74,10 @@ color:black;
 }
 
 .content-area{
-width:70%;    
+width:60%;    
 min-height:680px;
 padding-top:15%;
+margin-left:5%;
 }
 
 /*styling and positioning for scroller button */
