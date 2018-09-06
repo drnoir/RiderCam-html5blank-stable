@@ -23,6 +23,7 @@
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
                              <!-- code in logo upload here -->
 						</a>
+                            
 					</div>
 					<!-- /logo -->
             <!-- content area to avoid overlapping content to menu -->    

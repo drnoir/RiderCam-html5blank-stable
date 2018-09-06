@@ -72,6 +72,8 @@ color:black;
 
 #content-area{
 width:70%;    
+min-height:680px;
+padding-top:15%;
 }
 
 /*class for custum logo styling*/
