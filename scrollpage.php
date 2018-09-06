@@ -11,6 +11,7 @@
 -->
 
 	<main role="main">
+    
 <!-- section -->
 		<section>
        <!-- Fetch the pages and display in one continuous scroller -->
@@ -25,16 +26,22 @@
     ); 
              
     $childList = get_pages($childArgs); 
-    $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); 
-    $images = get_the_post_thumbnail_url($childList->ID, 'full');  
+    $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); 
+    $images = get_the_post_thumbnail_url($childList->ID, 'medium');  
             
     foreach ($childList as $child) {  
         $images = get_the_post_thumbnail_url($child->ID, ('700,300')); 
         $content = apply_filters('the_content', $child->post_content);
+        $title = apply_filters('the_content', $child->post_title); 
+        
+        $custom_logo_id = get_theme_mod( 'custom_logo' );
+        $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
         
         echo  
             '<div class="content" style="background: url('.$images.') no-repeat;"> 
-            <div class = "content-area">'.$content.'</div>
+            <div class = "content-area">
+            <img src="'. esc_url( $logo[0] ) .'">
+            <h2>'.$title.'</h2>'.$content.'</div>
             <div class = "scroller"><i class="scroll fas fa-angle-double-down fa-3x"></i></div></div>';
         } 
           
