@@ -14,21 +14,17 @@
 
 			<!-- article -->
             <div id = "content-area">
-                  <!-- logo -->
+                <!-- content area to avoid overlapping content to menu -->    
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                 <!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
                             <?php if ( function_exists( 'the_custom_logo' ) ) {
                         the_custom_logo();
                             } ?>
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-                             <!-- code in logo upload here -->
 						</a>
                             
 					</div>
-					<!-- /logo -->
-            <!-- content area to avoid overlapping content to menu -->    
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 				<?php the_content(); ?>
 
 				<?php comments_template( '', true ); // Remove if you don't want comments ?>
