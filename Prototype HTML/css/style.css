@@ -22,6 +22,7 @@ h1,h2, h3
 float:right;
 background:#104040;
 opacity:0.95;
+filter:blur(0.9px);
 width:30%;
 min-height:680px; 
 color:lightblue;
