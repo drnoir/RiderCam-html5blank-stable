@@ -8,6 +8,11 @@ font-family: 'din';
   src: url('/camrider/wp-content/themes/html5blank-stable/fonts/din/din.ttf');
 }
 
+.wrapper
+{
+width:75%;
+}
+
 
 h4,h5{
 color: #FFF;  
@@ -18,6 +23,11 @@ h1,h2, h3
     color:#104040;
 }
 
+a{
+    color:white;
+}
+/*sidebar style*/
+
 .RightMenu{
 float:right;
 background:#104040;
@@ -27,29 +37,50 @@ color:lightblue;
 padding:35px;
 position: fixed;
 left:75%;
+z-index:0;    
+opacity:0.95;
+/*filter:blur(0.5px);  */
+/*-webkit-filter: blur(0.5px);*/
 }
 
-div.RightMenu
+/*div to remove blurring on text and menu elements of RightMenu*/
+.MenuArea
 {
-opacity:0.95;
-filter:blur(0.5px);  
+  filter:blur(0px);
+-webkit-filter: blur(0px);
+  z-index:1;
 }
+
+.menu{
+    filter:blur(0px);
+  z-index:1; 
+}
+
 
 
 .widget_nav_menu{
 /*override blur effect for menu items */
 filter:blur(0px); 
 }
-
 .search-input{
 background-color:transparent;
 color:white;
+border:0;
 }
 
-.menu{
+ul.menu{
 list-style: none;
 margin-bottom:45px;
-color:lightblue;
+filter:blur(0px);
+z-index:1;
+}
+
+ul.menu li:first-child{
+color:red;
+}
+
+ul.menu li{
+color:white;    
 }
 
 
@@ -61,20 +92,10 @@ ul.sub-menu a{
 color:white;    
 }
 
-.menu a{
-color:white;
-}
-
-.menu a:first{
-color:lightblue;
-}
-
-menu a.active{
-color:blue; 
-} 
 
 .menu a:hover{
 text-decoration: none;
+color:lightblue;
 }
 
 .highlight{
@@ -95,7 +116,7 @@ color:black;
 }
 
 .content-area{
-width:60%;    
+width:70%;    
 min-height:680px;
 padding-top:5%;
 margin-left:5%;

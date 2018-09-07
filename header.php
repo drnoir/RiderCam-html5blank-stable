@@ -28,6 +28,7 @@
             assets: '<?php echo get_template_directory_uri(); ?>',
             tests: {}
         });
+
         </script>
         <!--load in JQuery lib -->
         

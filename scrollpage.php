@@ -52,8 +52,7 @@
         echo  
             '<div class="content" style="background: url('.$images.') no-repeat;"> 
             <div class = "content-area">
-            <a href="about-scrollpage/#Our Story">test</a>
-            <a href="#'.$title_link_s.'">'.$title_link_s.'</a>
+            <a href="#'.$title_link_s.'"></a>
             <h2>'.$title.'</h2>'.$content.'</div>
             <div class = "scroller"><i class="scroll fas fa-angle-double-down fa-3x"></i></div></div>';
         } 
