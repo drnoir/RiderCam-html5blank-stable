@@ -15,6 +15,7 @@
         <script src="/camrider/wp-content/themes/html5blank-stable/js/jquery-3.3.1.min.js"></script> 
         <script src="/camrider/wp-content/themes/html5blank-stable/js/custum.js"></script>
         <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+        <script src="site-ajax.js"></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">

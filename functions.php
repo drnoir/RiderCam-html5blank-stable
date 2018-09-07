@@ -468,4 +468,5 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 //remove auto adding p blocks - interferring with links for page jumps generation in scrollpage.php 
 remove_filter('the_content', 'wpautop'); remove_filter('the_excerpt', 'wpautop');
 
+wp_enqueue_script('custom', 'site-ajax'); 
 ?>
