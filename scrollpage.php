@@ -54,7 +54,7 @@
             <div class = "content-area">
             <a href="#'.$title_link_s.'"></a>
             <h2>'.$title.'</h2>'.$content.'</div>
-            <div class = "scroller"><i class="scroll fas fa-angle-double-down fa-3x"></i></div></div>';
+            <div class = "scroller"><img class="scroll" src = "/camrider/wp-content/uploads/2018/09/scoll.png"></img></div></div>';
         } 
           
 ?>
