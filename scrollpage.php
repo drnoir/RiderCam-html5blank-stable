@@ -1,5 +1,10 @@
+<!-- remove auto p tags-->
+<?php remove_filter (’the_content’, ‘wpautop’); ?>
+
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
+
+
 <!--
 /**
  * Template Name: Scrollpage
@@ -41,11 +46,13 @@
         $images = get_the_post_thumbnail_url($child->ID, array(500, 500)); 
         $content = apply_filters('the_content', $child->post_content);
         $title = apply_filters('the_content', $child->post_title); 
+        $title_link = (string)$title; 
+        $title_link_s = strip_tags($title_link, '<p>');
         
         echo  
             '<div class="content" style="background: url('.$images.') no-repeat;"> 
             <div class = "content-area">
-            <h2>'.$title.'</h2>'.$content.'</div>
+            <h2><a href="#'.$title_link_s.'">'.$title.'</h2></a>'.$content.'</div>
             <div class = "scroller"><i class="scroll fas fa-angle-double-down fa-3x"></i></div></div>';
         } 
           
