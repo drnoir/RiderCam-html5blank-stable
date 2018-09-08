@@ -7,9 +7,8 @@
 		<section>
         <!-- Apply content CSS Styles -->
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-        <div id = "content" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"> 
-			<h1><?php the_title(); ?></h1>
-
+        <div id = "content" class = "bgimage" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"> 
+			
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
@@ -25,9 +24,10 @@
 						</a>
                             
 					</div>
+                <h1><?php the_title(); ?></h1>
+
 				<?php the_content(); ?>
 
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
 				<br class="clear">
 

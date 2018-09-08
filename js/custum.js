@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $( ".scroll" ).click(function() { // Top to Bottom
     console.log("scroll button clicked");
-    $.scrollTo('+=700px', 800);
+    $.scrollTo('+=800px', 800);
     });    
     
 //    

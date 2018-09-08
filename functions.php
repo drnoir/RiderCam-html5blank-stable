@@ -466,7 +466,7 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 }
 
 //remove auto adding p blocks - interferring with links for page jumps generation in scrollpage.php 
-remove_filter('the_content', 'wpautop'); remove_filter('the_excerpt', 'wpautop');
+//remove_filter('the_content', 'wpautop'); remove_filter('the_excerpt', 'wpautop');
 
 wp_enqueue_script('custom'); //Name of the script. Should be unique.here is 'custom'
 wp_localize_script('custom', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));  // remove admin_script and add unique javascript file.

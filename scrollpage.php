@@ -21,15 +21,7 @@
 		<section>
        <!-- Fetch the pages and display in one continuous scroller -->
 <!--            <article>-->
-      <!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-                            <?php if ( function_exists( 'the_custom_logo' ) ) {
-                        the_custom_logo();
-                            } ?>
-						</a>
-                            
-					</div>         
+             
 <?php 
                 
     $childArgs = array( 
@@ -52,9 +44,10 @@
         echo  
             '<div class="content" style="background: url('.$images.') no-repeat;"> 
             <div class = "content-area">
+            <div class="logo">'.the_custom_logo().'</a></div>  
             <a href="#'.$title_link_s.'"></a>
             <h2>'.$title.'</h2>'.$content.'</div>
-            <div class = "scroller"><img class="scroll" src = "/camrider/wp-content/uploads/2018/09/scoll.png"></img></div></div>';
+            <div class = "scroller"><img class="scroll" src = "/camrider/wp-content/uploads/2018/09/scollblack.png"></img></div></div>';
         } 
           
 ?>

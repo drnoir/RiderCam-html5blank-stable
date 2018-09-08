@@ -21,6 +21,7 @@ color: #FFF;
 h1,h2, h3
 {
     color:#104040;
+    text-transform:uppercase;
 }
 
 a{
@@ -32,7 +33,7 @@ a{
 float:right;
 background:#104040;
 width:30%;
-min-height:680px; 
+min-height:100%; 
 color:lightblue;
 padding:35px;
 position: fixed;
@@ -108,7 +109,7 @@ color:lightblue;
 
 #content{
 width:100%;
-height:680px;
+height:100%;
 padding:20px;
 margin:2px;
 padding-top:10px;
@@ -117,9 +118,10 @@ color:black;
 
 .content-area{
 width:70%;    
-min-height:680px;
+min-height:100%;
 padding-top:10%;
 margin-left:5%;
+color:gray;
 }
 
 /*styling and positioning for scroller button */
@@ -135,9 +137,22 @@ margin: auto 0;
 }
 
 /*class for custum logo styling*/
+
+.logo
+{
+ width:150px;   
+ position: relative;
+ left:5%;
+}
+    */
+
+
+/*
+FIXED POS LOGO - REMOVE LATER??
 .logo
 {
  width:250px;   
  position: fixed;
  left:50px;
+*/
 }
