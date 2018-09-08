@@ -11,11 +11,6 @@ width:100%;
   src: url('/camrider/wp-content/themes/html5blank-stable/fonts/din/din.ttf');
 }
 
-.wrapper
-{
-width:75%;
-}
-
 .main
 {
 min-height:100%; 
@@ -40,13 +35,13 @@ a{
 .RightMenu{
 float:right;
 background:#104040;
-width:30%;
+width:25%;
 min-height:100%; 
 color:lightblue;
 padding-left:10px;
-padding-top:90px;
+padding-top:60px;
 position: fixed;
-left:75%;
+left:80%;
 z-index:0;    
 opacity:0.8;
 filter:blur(0.5px);  
@@ -56,22 +51,38 @@ filter:blur(0.5px);
 /*div to remove blurring on text and menu elements of RightMenu*/
 .MenuArea
 {
-  filter:blur(0.3px);
+  filter:blur(0px);
 -webkit-filter: blur(0.3px);
   z-index:1;
 }
 
 .menu{
-    filter:blur(0.3px);
-  z-index:1; 
+filter:blur(0px);
+z-index:1; 
+list-style: none;
+margin-bottom:45px;
+}
+
+.menu a:hover{
+text-decoration: none;
+color:grey;
+}
+
+.menu a:active{
+color:grey;    
+}
+
+.menu li:first{
+color:grey;    
 }
 
 
 
-.widget_nav_menu{
-/*override blur effect for menu items */
-filter:blur(0px); 
+.widget_nav_menu .current-menu-item a {
+    color: grey;
+    
 }
+
 
 .search{
 margin-left:40px;
@@ -81,6 +92,9 @@ background-color:transparent;
 color:white;
 border:0;
 }
+
+ 
+/*
 
 ul.menu{
 list-style: none;
@@ -119,6 +133,7 @@ color:darkgrey;
 .currentpage{
 color:lightblue;
 }
+*/
 
 .bgimage{
 height:100%;
@@ -137,7 +152,7 @@ color:black;
 width:70%;    
 min-height:100%;
 margin-top:10%;
-margin-left:5%;
+
 color:gray;
 }
 

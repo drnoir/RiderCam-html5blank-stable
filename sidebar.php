@@ -3,12 +3,11 @@
 
 	<div class="sidebar-widget RightMenu">
         <div class = "menu">
-            <div class = "MenuArea">
+      
                 <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
                 <?php get_template_part('searchform'); ?>
                 <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
-                </div>
-        </div>    
+        </div>   
     </div>
 
 </aside>
