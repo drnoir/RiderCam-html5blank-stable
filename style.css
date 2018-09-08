@@ -2,6 +2,8 @@ body{
 color:black;
 font-family: 'din';
 font-size: 1.3em;
+height:100%;
+width:100%;
 }
 
 @font-face {
@@ -14,6 +16,11 @@ font-size: 1.3em;
 width:75%;
 }
 
+.main
+{
+min-height:100%; 
+width:100%;
+}
 
 h4,h5{
 color: #FFF;  
@@ -41,7 +48,7 @@ padding-top:90px;
 position: fixed;
 left:75%;
 z-index:0;    
-opacity:0.7;
+opacity:0.8;
 filter:blur(0.5px);  
 -webkit-filter: blur(0.5px);
 }
@@ -64,6 +71,10 @@ filter:blur(0.5px);
 .widget_nav_menu{
 /*override blur effect for menu items */
 filter:blur(0px); 
+}
+
+.search{
+margin-left:40px;
 }
 .search-input{
 background-color:transparent;
@@ -113,9 +124,10 @@ color:lightblue;
 height:100%;
 width:100%;    
 }
+
 #content{
 width:100%;
-height:100%;
+min-height:100%; 
 padding:20px;
 margin:2px;
 color:black;

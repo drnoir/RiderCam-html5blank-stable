@@ -7,7 +7,7 @@
 		<section>
         <!-- Apply content CSS Styles -->
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-        <div id = "content" class = "bgimage" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"> 
+        <div id = "content" style="background: url('<?php echo $backgroundImg[0]; ?> ') no-repeat; min-height:980px;"> 
               <!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
