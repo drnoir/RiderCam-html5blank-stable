@@ -152,8 +152,16 @@ color:black;
 width:70%;    
 min-height:100%;
 margin-top:10%;
-
 color:gray;
+}
+
+/*content area for contact form*/
+#contact-area{
+width:70%;    
+margin-left:10%;    
+min-height:100%;
+margin-top:0%;
+color:gray;  
 }
 
 /*styling and positioning for scroller button */
