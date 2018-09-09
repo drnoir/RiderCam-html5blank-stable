@@ -27,6 +27,14 @@ h1,h2, h3
     text-transform:uppercase;
 }
 
+/*class for alternate colours*/
+
+.white{
+color:white;  
+text-transform:uppercase;
+}
+
+
 a{
     color:white;
 }
@@ -51,10 +59,23 @@ position: fixed;
 left:70%;
 z-index:0;    
 opacity:0.8;
-filter:blur(0.5px);  
--webkit-filter: blur(0.5px);
 }
 
+/*underlay for blurring bg image under menu without affecting child elements*/
+div.underlay-RightMenu
+{
+position: absolute;
+min-height:100%;
+width:35%;
+left:70%;
+filter: blur(4px);
+-moz-filter: blur(4px);
+-webkit-filter: blur(4px);
+-o-filter: blur(4px);
+-webkit-filter: blur(4px);
+opacity: 0.3;
+background: white;
+}
 
 .menu{
 z-index:1; 
@@ -88,12 +109,20 @@ color:lightblue;
 
 
 .search{
-margin-left:40px;
+margin-left:25px;
 }
+
 .search-input{
 background-color:transparent;
 color:white;
 border:0;
+padding: 12px 20px 12px 40px;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+}
+
+.search-input input[type=text]:focus {
+    width: 100%;
 }
 
 .bgimage{
@@ -123,11 +152,33 @@ width:70%;
 margin-left:10%;    
 min-height:100%;
 margin-top:0%;
-color:gray;  
+color:white;  
 }
 
+/*contact form styles */
 .wpcf7-form{
+ width:60%;   
+background-color: transparent;
+}
+
+.wpcf7-form input{
+     border-radius: 4px;
+     width:760px;
+     background-color: transparent;
+    color:white;
     
+}
+
+.wpcf7-form textarea {
+    width: 760px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+    color:white;
 }
 
 /*styling and positioning for scroller button */
@@ -149,15 +200,5 @@ img.custom-logo
  width:230px;
  position: relative;
 }
-    */
 
 
-/*
-FIXED POS LOGO - REMOVE LATER??
-.logo
-{
- width:250px;   
- position: fixed;
- left:50px;
-*/
-}
