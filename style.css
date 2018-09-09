@@ -32,54 +32,57 @@ a{
 }
 /*sidebar style*/
 
+.wrapper{
+height:100%; 
+}
+
+#container-fluid{
+   min-height:940px;   
+}
 .RightMenu{
 float:right;
 background:#104040;
-width:25%;
+width:35%;
 min-height:100%; 
 color:lightblue;
 padding-left:10px;
 padding-top:60px;
 position: fixed;
-left:80%;
+left:70%;
 z-index:0;    
 opacity:0.8;
 filter:blur(0.5px);  
 -webkit-filter: blur(0.5px);
 }
 
-/*div to remove blurring on text and menu elements of RightMenu*/
-.MenuArea
-{
-  filter:blur(0px);
--webkit-filter: blur(0.3px);
-  z-index:1;
-}
 
 .menu{
-filter:blur(0px);
 z-index:1; 
 list-style: none;
 margin-bottom:45px;
+ filter:none;  
+font-size:1em;    
+margin-left:-15px;    
 }
 
 .menu a:hover{
 text-decoration: none;
-color:grey;
+color:lightblue;
 }
 
 .menu a:active{
-color:grey;    
+color:lightblue;    
 }
 
-.menu li:first{
-color:grey;    
+.menu li{
+ filter:none;  
+-webkit-filter: blur(none);    
 }
 
 
 
 .widget_nav_menu .current-menu-item a {
-    color: grey;
+    color: lightblue;
     
 }
 
@@ -93,48 +96,6 @@ color:white;
 border:0;
 }
 
- 
-/*
-
-ul.menu{
-list-style: none;
-margin-bottom:45px;
-filter:blur(0px);
-z-index:1;
-}
-
-ul.menu li:first-child{
-color:red;
-}
-
-ul.menu li{
-color:white;    
-}
-
-
-ul.sub-menu{
-list-style: none;  
-}
-
-ul.sub-menu a{
-color:white;    
-}
-
-
-.menu a:hover{
-text-decoration: none;
-color:lightblue;
-}
-
-.highlight{
-color:darkgrey;
-}
-
-.currentpage{
-color:lightblue;
-}
-*/
-
 .bgimage{
 height:100%;
 width:100%;    
@@ -143,7 +104,8 @@ width:100%;
 #content{
 width:100%;
 min-height:100%; 
-padding:20px;
+padding-left:20px;
+padding-right:20px;
 margin:2px;
 color:black;
 }
@@ -151,7 +113,7 @@ color:black;
 #content-area{
 width:70%;    
 min-height:100%;
-margin-top:10%;
+padding-top:10%;
 color:gray;
 }
 
@@ -162,6 +124,10 @@ margin-left:10%;
 min-height:100%;
 margin-top:0%;
 color:gray;  
+}
+
+.wpcf7-form{
+    
 }
 
 /*styling and positioning for scroller button */
@@ -178,9 +144,9 @@ margin: auto 0;
 
 /*class for custum logo styling*/
 
-.logo
+img.custom-logo
 {
- width:150px;   
+ width:230px;
  position: relative;
 }
     */

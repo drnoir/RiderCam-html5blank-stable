@@ -35,9 +35,7 @@
 	</head>
 	<body <?php body_class(); ?>>
      
-            <div class="wrapper">
            
-      
 			<!-- header -->
 			<header class="header clear" role="banner">
 			</header>
